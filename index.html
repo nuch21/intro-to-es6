@@ -1,2 +1,100 @@
-<script src='build/main.bundle.js'></script>
-Hello world
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Homework</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script src='js/index.js'></script>
+		<style>
+			#keyboard{
+				text-align: center;
+				width: 100%;
+				height: 100%;
+			}
+			.bt{
+				width: 50px;
+				height: 50px;
+			    background-color: #F5FFFA;
+			    border: 2px;
+			}
+			.bt:active{
+				border: 3px ;
+			}
+			body {
+			    background-color: #FFE4E1;
+			}
+		</style>
+	</head>
+	<body>
+		<br/>
+		<div class="w3-container">
+			 <div class="row">
+			 	<div class="col-sm-2"></div>
+				<div class="col-sm-8 ">
+					<div class="w3-panel w3-card">
+						<div><center><h2>Enter Your Text Here</h2></center>
+						<form>
+						    <div class="form-group">
+						      	<textarea class="form-control" rows="3" id="wish"></textarea>
+							</div>
+						</form>
+						<div id="keyboard">
+							<button type="button" class="bt" onclick="characters(0);">1</button>
+							<button type="button" class="bt" onclick="characters(1);">2</button>
+							<button type="button" class="bt" onclick="characters(2);">3</button>
+							<button type="button" class="bt" onclick="characters(3);">4</button>
+							<button type="button" class="bt" onclick="characters(4);">5</button>
+							<button type="button" class="bt" onclick="characters(5);">6</button>
+							<button type="button" class="bt" onclick="characters(6);">7</button>
+							<button type="button" class="bt" onclick="characters(7);">8</button>
+							<button type="button" class="bt" onclick="characters(8);">9</button>
+							<button type="button" class="bt" onclick="characters(9);">0</button>
+							<button type="button" class="bt" onclick="del();" style="width: 100px;">Backspace</button>
+							<br/><br/>
+							<button type="button" class="bt" onclick="tab();" style="width: 80px;">Tab</button>
+							<button type="button" class="bt" onclick="characters(12);">q</button>
+							<button type="button" class="bt" onclick="characters(13);">w</button>
+							<button type="button" class="bt" onclick="characters(14);">e</button>
+							<button type="button" class="bt" onclick="characters(15);">r</button>
+							<button type="button" class="bt" onclick="characters(16);">t</button>
+							<button type="button" class="bt" onclick="characters(17);">y</button>
+							<button type="button" class="bt" onclick="characters(18);">u</button>
+							<button type="button" class="bt" onclick="characters(19);">i</button>
+							<button type="button" class="bt" onclick="characters(20);">o</button>
+							<button type="button" class="bt" onclick="characters(21);">p</button>
+							<br/><br/>
+							<button type="button" class="bt" onclick="capslocks();" style="width: 120px;">Caps Lock</button>
+							<button type="button" class="bt" onclick="characters(23);">a</button>
+							<button type="button" class="bt" onclick="characters(24);">s</button>
+							<button type="button" class="bt" onclick="characters(25);">d</button>
+							<button type="button" class="bt" onclick="characters(26);">f</button>
+							<button type="button" class="bt" onclick="characters(27);">g</button>
+							<button type="button" class="bt" onclick="characters(28);">h</button>
+							<button type="button" class="bt" onclick="characters(29);">j</button>
+							<button type="button" class="bt" onclick="characters(30);">k</button>
+							<button type="button" class="bt" onclick="characters(31);">l</button>
+							<button type="button" class="bt" onclick="enter();" style="width: 80px;">Enter</button>
+							<br/><br/>
+							<button type="button" class="bt" onclick="shifts();" style="width: 80px;">Shift</button>
+							<button type="button" class="bt" onclick="characters(34);">z</button>
+							<button type="button" class="bt" onclick="characters(35);">x</button>
+							<button type="button" class="bt" onclick="characters(36);">c</button>
+							<button type="button" class="bt" onclick="characters(37);">v</button>
+							<button type="button" class="bt" onclick="characters(38);">b</button>
+							<button type="button" class="bt" onclick="characters(39);">n</button>
+							<button type="button" class="bt" onclick="characters(40);">m</button>
+							<button type="button" class="bt" onclick="characters(41);">,</button>
+							<button type="button" class="bt" onclick="characters(42);">.</button>
+							<button type="button" class="bt" onclick="characters(43);">/</button>
+							<button type="button" class="bt" onclick="clears();" style="width: 80px;">Clear</button>
+							<br/><br/>
+							<button type="button" class="bt" onclick="space();" style="width: 400px;">Space</button>
+						</div>
+					</div>
+				</div>
+			 </div>
+		</div>
+	</body>
+</html>
